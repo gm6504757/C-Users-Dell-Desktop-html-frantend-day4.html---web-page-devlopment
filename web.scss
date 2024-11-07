@@ -1,0 +1,102 @@
+// Variables
+$primary-color: #333;
+$secondary-color: #e2f0fb;
+$text-color: white;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Global Styles
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+// Header Styles
+header {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px 0;
+    
+    nav ul {
+        @include flex-center;
+        list-style: none;
+        
+        li {
+            margin: 0 15px;
+            
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+// Profile Card
+.profile-card {
+    text-align: center;
+    padding: 50px 0;
+    background-color: $secondary-color;
+}
+
+
+// Skills Section
+#skills {
+    padding: 50px;
+    text-align: center;
+
+    .tech-icons {
+        img {
+            width: 70px;
+            margin: 40px;
+        }
+    }
+}
+
+// Projects Section
+.projects-grid {
+    @include flex-center;
+    gap: 60px;
+    margin: 40px;
+
+    .project-card {
+        background-color: #ddd;
+        padding: 40px;
+        width: 200px;
+        text-align: center;
+        border-radius: 16px;
+    }
+}
+
+// Footer Styles
+footer {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 10px 0;
+    text-align: center;
+
+    ul {
+        @include flex-center;
+        list-style: none;
+
+        li {
+            margin: 0 10px;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full stack web devlopement system</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <header>      
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Login and Signup Buttons -->
+        <div class="auth-buttons">
+            <!-- Login Button -->
+            <button id="login-btn" onclick="document.getElementById('loginModal').style.display='block'">Login</button>
+    
+            <!-- Signup Button -->
+            <button id="signup-btn" onclick="document.getElementById('signupModal').style.display='block'">Signup</button>
+        </div>
+    
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br>
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+    
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Signup Modal -->
+        <div id="signupModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="document.getElementById('signupModal').style.display='none'">&times;</span>
+                <h2>Signup</h2>
+                <form>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required><br>
+    
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required><br>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+    
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+    
+                    <button type="submit">Signup</button>
+                </form>
+            </div>
+        </div>
+        <div class="logo">
+            <!-- Logo Image or Text -->
+            <a href="#home">
+                <img src="full-stack.jpg" alt="Logo" />
+            </a>
+        </div>
+    </header>
+    <section id="home" style="display: flex;">
+        <!-- Left side - Image -->
+        <div class="profile-image" style="flex: 1; padding-left: 20px;">
+            <img src="MRDOC.jpg" alt="Profile Image" style="width: 100%; height: auto;">
+        </div>
+    
+        <!-- Right side - Content -->
+        <div class="profile-card" style="flex: 2;">
+            <!-- Name -->
+            <h1>Mahesha R</h1>
+            
+            <!-- Address -->
+            <h2>Address</h2>
+            <p>Mahesha R S/O Ramalingaiah Dyavayyana palya kelarla halli post,<br>
+               Pavagada rural, Tumkur District, Karnataka - 572116</p>
+            
+            <!-- Career Objective -->
+            <h2>Career Objective</h2>
+            <p>As a recent graduate with a degree in Information Science Engineering, I am eager to launch my career in the IT industry. I am seeking an entry-level position that leverages my foundational knowledge in programming, web technologies, database management, and contribute to IT projects. With a strong commitment to staying updated with emerging technologies.</p>
+    
+            <!-- Education -->
+            <h2>Education</h2>
+               <table border="1" cellpadding="10" cellspacing="0">
+               <thead>
+                <tr>
+                   <th>Qualification</th>
+                   <th>Institution</th>
+                   <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                 <td>M-tech (Software Engineering)</td>
+                 <td>JSS Science and Technology University, Mysuru</td>
+                 <td>2024-2025</td>
+                </tr>
+                <tr>
+                 <td>Bachelor's Degree in Information Science Engineering</td>
+                 <td>Visvesvaraya Technological University, Belgaum</td>
+                 <td>2019-2023</td>
+                </tr>
+                <tr>
+                 <td>2nd PUC in PCMB</td>
+                 <td>Vijaya PU College, Gokula RD II, CR SS Puram, Tumkur</td>
+                 <td>2017-2019</td>
+                </tr>
+                <tr>
+                 <td>SSLC (10th)</td>
+                 <td>Mahathma Gandhi Smaraka Sa Nivasa HS, Gundarlahalli, Pavagada</td>
+                 <td>2016-2017</td>
+                </tr>
+              </tbody>
+              </table>
+
+    
+            <!-- Technical Skills -->
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: [C, Basics ofjava, Python, DSA, Bigdata.]</li>
+                <li>Web Technologies: [HTML, CSS.]</li>
+                <li>Database Management: [ MySQL.]</li>
+                <li>Operating system: [Windows]</li>
+                <li>Other Tools: [Visual Studio, Eclipse, open source software tools, python, Anaconda Navigator, Dev C++.]</li>
+            </ul>
+    
+            <!-- Internship -->
+            <h2>Internship</h2>
+            <p>[5 Weeks of training in Big Data Analytic using Hadoop and Hive Query in Eunoia Labs, Bangalore and completed Project on “Amazon Prime Video Using Big Data Analytics”.]</p>
+    
+            <!-- Certification -->
+            <h2>Topic Modelling using NLP</h2>
+            <p>[Team size:4- 
+                Description: Topic modelling in NLP is a technique used to discover abstract topics within a collection of documents by identifying patterns of word co-occurrence Common methods include Latent Dirichlet Allocation (LDA) and Non-Negative Matrix Factorization (NMF), which help in organizing, summarizing, and understanding large text corpora.]</p>
+            <h2>KSRTC EMPLOYEE DETAILS</h2>
+            <p>[Team size:1- 
+                Description:: The main objective of the KSRTC EMPLOYEE DETAILS SYSTEM. We Developed the Database on Simplified Manner and user-friendly Interface, With Online booking System.]</p>
+            <!-- Personal Details -->
+            <h2>Personal Details</h2>
+            <ul>
+                <li>Date of Birth: [15 May 2001]</li>
+                <li>Nationality: [Indian]</li>
+                <li>Languages Known: [English, kannada, telugu]</li>
+            </ul>
+    
+            <!-- Declaration -->
+            <h2>Declaration</h2>
+            <p>I hereby declare thatthe above information and details provided by me are correct to the best of my knowledge. </p>
+        </div>
+    </section>
+    
+
+    <section id="skills">
+        <h2>Learned Technologies</h2>
+        <div class="tech-icons">
+            <img src="html5-logo.png" alt="HTML5">
+            <img src="CSS.3.svg.png" alt="CSS3">
+            <img src="JavaScript-Logo.png" alt="JavaScript">
+            <img src="Java-Logo.png" alt="Java">
+            <img src="python.jpeg" alt="python">
+        </div>
+    </section>
+    <section id="projects contents">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+    
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Phase 1</h3>
+                <ul>
+                    <li><strong>Domain Name:</strong> KSRTC Employee Management</li>
+                    <li><strong>Language:</strong> HTML, CSS, SCSS, JS, Python, Java</li>
+                    <li><strong>Structure:</strong> Diagram</li>
+                    <li><strong>About Project:</strong> Nevalty Project</li>
+                </ul>
+                <button onclick="showDetails('phase1')">More Details</button>
+                <div id="phase1-details" style="display: none;">
+                    <p>This phase focuses on building the basic structure and selecting the right tools for the KSRTC employee management system.</p>
+                </div>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Phase 2</h3>
+                <ul>
+                    <li><strong>System Requirements:</strong> System, tools, budget, and clients' requirements</li>
+                    <li><strong>Analysis:</strong> Project Analysis</li>
+                    <li><strong>Design:</strong> Project Design</li>
+                    <li><strong>Coding:</strong> Strong Coding</li>
+                    <li><strong>Testing:</strong> Web development testing</li>
+                    <li><strong>Deployments:</strong> Project Deployments</li>
+                    <li><strong>Maintenance:</strong> Tools, testing, coding Maintenance</li>
+                    <li><strong>Feedback:</strong> Clients' Feedback</li>
+                </ul>
+                <button onclick="showDetails('phase2')">More Details</button>
+                <div id="phase2-details" style="display: none;">
+                    <p>This phase covers system requirements, analysis, design, and coding for the project. It includes rigorous testing and gathering feedback from clients.</p>
+                </div>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>Phase 3</h3>
+                <ul>
+                    <li><strong>Certificate:</strong> KGiSL Microcollege (Full Stack Development in AWS)</li>
+                    <li><strong>Acknowledgement:</strong> 29 Aug 2018 - Recognizing spontaneous micro-expressions in video sequences is a challenging problem.</li>
+                    <li><strong>Introduction:</strong> Employee details database updates</li>
+                    <li><strong>Aim:</strong> KSRTC Employee Management System</li>
+                    <li><strong>Design Window:</strong> Code-based backend and frontend Design Window</li>
+                    <li><strong>Output Window & Coding:</strong> Output Window & Coding</li>
+                    <li><strong>Table Structure:</strong> Table Structure</li>
+                    <li><strong>Conclusion:</strong> Project updates review</li>
+                    <li><strong>Bibliography:</strong> Nevalty Bibliography</li>
+                </ul>
+                <button onclick="showDetails('phase3')">More Details</button>
+                <div id="phase3-details" style="display: none;">
+                    <p>This phase provides the final project review, including certificates, acknowledgements, and detailed project documentation. It covers the employee management system's aim, design, and implementation.</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <script>
+        // Function to toggle the display of additional details
+        function showDetails(phase) {
+            var detailsDiv = document.getElementById(phase + '-details');
+            if (detailsDiv.style.display === "none") {
+                detailsDiv.style.display = "block";
+            } else {
+                detailsDiv.style.display = "none";
+            }
+        }
+    </script>
+    <footer>
+        <p>&copy;create a Portfoliopage and avilable for job </p>
+        <p>&copy;Rate my site(star icons 5-times) trusted site by google(google icon) </p>
+    </footer>
+</body>
+</html>
